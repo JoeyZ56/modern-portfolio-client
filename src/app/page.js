@@ -1,7 +1,7 @@
-import About from "./about/page";
+import About from "./components/About";
 import Hero from "./components/Hero";
-import Contact from "./contact/page";
-import Projects from "./projects/page";
+import Contact from "./components/Contact";
+import Projects from "./components/ProjectCard";
 
 export default function Home() {
   return (

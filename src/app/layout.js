@@ -1,6 +1,5 @@
 import "./styles/global.css";
 import Navbar from "./components/Navbar";
-import { Children } from "react";
 
 export const metadata = {
   title: "Joseph Zazzi | Developer Portfolio",
