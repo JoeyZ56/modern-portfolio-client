@@ -57,7 +57,7 @@ export default function Contact() {
               value={form.name}
               onChange={handleChange}
               placeholder="Name or Company"
-              className="w-full px-4 py-2 border rounded"
+              className="w-full px-4 py-2 border rounded text-black"
             />
             <input
               name="email"
@@ -65,14 +65,14 @@ export default function Contact() {
               value={form.email}
               onChange={handleChange}
               placeholder="Email"
-              className="w-full px-4 py-2 border rounded"
+              className="w-full px-4 py-2 border rounded text-black"
             />
             <textarea
               name="message"
               value={form.message}
               onChange={handleChange}
               placeholder="Message..."
-              className="w-full px-4 py-2 border rounded"
+              className="w-full px-4 py-2 border rounded text-black"
             />
             <div className="flex justify-center">
               <button

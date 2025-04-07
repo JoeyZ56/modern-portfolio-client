@@ -9,11 +9,26 @@ export default function About() {
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
-          className="text-5xl md:text-7xl font-bold mb-8"
+          className="text-5xl md:text-5xl font-bold mb-8"
         >
-          Hi, I’m Joseph Zazzi, a full-stack MERN developer passionate about
-          clean, responsive apps and a little AI magic.
+          👋🏻 I’m Joseph Zazzi!
         </motion.h2>
+        <motion.p
+          initial={{ opacity: 0, y: -20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1 }}
+          className="text-3xl md:text-2xl mb-8"
+        >
+          A full-stack MERN developer passionate about clean, responsive apps.
+        </motion.p>
+        <motion.h3
+          initial={{ opacity: 0, y: -20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1 }}
+          className="text-4xl md:text-3xl font-bold mb-8"
+        >
+          With a little AI magic😜
+        </motion.h3>
 
         <motion.p
           initial={{ opacity: 0 }}

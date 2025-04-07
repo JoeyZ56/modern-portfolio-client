@@ -1,6 +1,18 @@
+"use client";
+import { useEffect, useState } from "react";
 import Link from "next/link";
 
 export default function Navbar() {
+  const [dark, setDark] = useState(false);
+
+  useEffect(() => {
+    if (dark) {
+      document.documentElement.classList.add("dark");
+    } else {
+      document.documentElement.classList.remove("dark");
+    }
+  }, [dark]);
+
   return (
     <nav className="sticky top-0 z-50 bg-white/80 dark:bg-black/80 backdrop-blur-md shadow-md">
       <div className="max-w-6xl mx-auto px-4 py-3 flex justify-between items-center">
@@ -30,6 +42,12 @@ export default function Navbar() {
           >
             Contact
           </a>
+          <button
+            onClick={() => setDark(!dark)}
+            className="bg-zinc-200 dark:bg-zinc-800 px-3 py-1 rounded transition"
+          >
+            {dark ? "☀️" : "🌙"}
+          </button>
         </div>
       </div>
     </nav>

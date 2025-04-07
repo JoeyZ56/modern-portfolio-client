@@ -16,6 +16,7 @@ html {
   }
 }
 
+/* Light mode*/
 body {
   color: white;
   background: linear-gradient(-45deg, #6a11cb, #2575fc, #43e97b, #38f9d7);
@@ -30,6 +31,16 @@ body::before {
   backdrop-filter: blur(2px);
   pointer-events: none;
   z-index: -1;
+}
+
+/* Dark mode MUHAHAHAHA!*/
+@media (prefers-color-scheme: dark) {
+  .dark body {
+    color: white;
+    background: linear-gradient(-45deg, #0f0c29, #302b63, #24243e, #1a1a2e);
+    background-size: 400% 400%;
+    animation: gradient-shift 20s ease infinite;
+  }
 }
 
 a {

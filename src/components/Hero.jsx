@@ -6,7 +6,8 @@ export default function Hero() {
   return (
     <section
       id="hero"
-      className="relative min-h-screen flex flex-col justify-center items-center text-white px-4 overflow-hidden"
+      className="relative min-h-screen flex flex-col justify-center items-center 
+             text-black dark:text-white px-4 overflow-hidden"
     >
       <motion.h1
         initial={{ opacity: 0, y: -20 }}

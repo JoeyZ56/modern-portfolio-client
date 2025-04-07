@@ -46,6 +46,14 @@ const Projects = () => {
 
   return (
     <section id="projects">
+      <motion.h1
+        initial={{ opacity: 0, y: -20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1 }}
+        className="text-5xl md:text-5xl font-bold mb-6 flex justify-center"
+      >
+        My Projects
+      </motion.h1>
       <motion.section
         className="grid gap-8 md:grid-cols-2 lg:grid-cols-3 px-4 py-8 max-w-7xl mx-auto"
         variants={containerVariants}
