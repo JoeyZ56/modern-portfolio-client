@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+@keyframes gradient-shift {
+  0%,
+  100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+body {
+  color: white;
+  background: linear-gradient(-45deg, #6a11cb, #2575fc, #43e97b, #38f9d7);
+  background-size: 400% 400%;
+  animation: gradient-shift 15s ease infinite;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  backdrop-filter: blur(2px);
+  pointer-events: none;
+  z-index: -1;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}

@@ -1,5 +1,6 @@
-import "./styles/global.css";
-import Navbar from "./components/Navbar";
+import "../styles/globals.css";
+import Navbar from "../components/Navbar";
+import StarsBackground from "../components/StarsBackground";
 
 export const metadata = {
   title: "Joseph Zazzi | Developer Portfolio",
@@ -12,6 +13,7 @@ export default function RootLayout({ children }) {
       <head />
       <body className="bg-white text-gray-900 dark:bg-black dark:text-white">
         <Navbar />
+        <StarsBackground />
         <main className="container mx-auto px-4">{children}</main>
       </body>
     </html>
