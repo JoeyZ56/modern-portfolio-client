@@ -45,17 +45,17 @@ const Projects = () => {
   }
 
   return (
-    <section id="projects">
+    <section id="projects" className="scroll-mt-24">
       <motion.h1
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
-        className="text-5xl md:text-5xl font-bold mb-6 flex justify-center"
+        className="flex justify-center mb-6 text-5xl font-bold md:text-5xl"
       >
         My Projects
       </motion.h1>
       <motion.section
-        className="grid gap-8 md:grid-cols-2 lg:grid-cols-3 px-4 py-8 max-w-7xl mx-auto"
+        className="grid gap-8 px-4 py-8 mx-auto md:grid-cols-2 lg:grid-cols-3 max-w-7xl"
         variants={containerVariants}
         initial="hidden"
         animate="visible"

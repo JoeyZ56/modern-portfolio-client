@@ -6,14 +6,13 @@ export default function Hero() {
   return (
     <section
       id="hero"
-      className="relative min-h-screen flex flex-col justify-center items-center 
-             text-black dark:text-white px-4 overflow-hidden"
+      className="relative flex flex-col items-center justify-center min-h-screen px-4 overflow-hidden text-black dark:text-white"
     >
       <motion.h1
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
-        className="text-5xl md:text-7xl font-bold mb-6"
+        className="mb-8 text-5xl font-bold md:text-7xl"
       >
         Joseph Zazzi
       </motion.h1>
@@ -30,9 +29,9 @@ export default function Hero() {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 0.5, duration: 1 }}
-        className="text-xl md:text-2xl mb-8 text-center max-w-xl"
+        className="max-w-xl mb-8 text-xl text-center md:text-2xl"
       >
-        Full‑stack MERN Developer with an AI Twist
+        JR. Full Stack MERN Developer with an AI Twist
       </motion.p>
       <motion.div
         initial={{ opacity: 0, y: 20 }}

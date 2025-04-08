@@ -13,7 +13,7 @@ export default function StarsBackground() {
   }, []);
 
   return (
-    <div className="fixed inset-0 z-0 pointer-events-none overflow-hidden">
+    <div className="fixed inset-0 z-0 overflow-hidden pointer-events-none">
       {stars.map((star, index) => (
         <div
           key={index}

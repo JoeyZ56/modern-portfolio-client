@@ -19,20 +19,16 @@ const ProjectCard = ({
       variants={cardVariants}
       whileHover={{ scale: 1.03, rotate: 0.2 }}
       whileTap={{ scale: 0.98 }}
-      className="bg-white dark:bg-gradient-to-br dark:from-zinc-800 dark:to-zinc-900 
-             shadow-lg hover:shadow-2xl transition-all duration-300 
-             rounded-xl overflow-hidden flex flex-col border 
-             border-gray-100 dark:border-zinc-700 
-             max-w-sm w-full mx-auto"
+      className="flex flex-col w-full max-w-sm mx-auto overflow-hidden transition-all duration-300 bg-white border border-gray-100 shadow-lg dark:bg-gradient-to-br dark:from-zinc-800 dark:to-zinc-900 hover:shadow-2xl rounded-xl dark:border-zinc-700"
     >
       <img
         src={image}
         alt={title}
-        className="w-full h-48 object-cover transition-transform duration-300 hover:scale-105"
+        className="object-cover w-full h-48 transition-transform duration-300 hover:scale-105"
       />
 
-      <div className="p-5 flex flex-col flex-grow">
-        <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2">
+      <div className="flex flex-col flex-grow p-5">
+        <h3 className="mb-2 text-xl font-bold text-gray-900 dark:text-white">
           {title}
         </h3>
         <p className="text-sm text-gray-700 dark:text-gray-300 line-clamp-4">
@@ -43,7 +39,7 @@ const ProjectCard = ({
           {techStack?.map((tech, i) => (
             <span
               key={i}
-              className="bg-indigo-100 dark:bg-indigo-700 text-indigo-800 dark:text-white text-xs px-2 py-1 rounded"
+              className="px-2 py-1 text-xs text-indigo-800 bg-indigo-100 rounded dark:bg-indigo-700 dark:text-white"
             >
               {tech}
             </span>

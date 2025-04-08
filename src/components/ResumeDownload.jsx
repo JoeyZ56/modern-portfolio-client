@@ -20,15 +20,15 @@ const ResumeDownload = () => {
   return (
     <div>
       <motion.div
+        initial={{ opacity: 0, y: -20 }}
+        animate={{ opacity: 1, y: 0 }}
         whileInView={{ opacity: 1 }}
         whileHover={{ scale: 1.1 }}
         transition={{ duration: 0.5, type: "tween" }}
       >
         <button
           onClick={handlePDFDownload}
-          className=" font-semibold px-6 py-3 mt-6 rounded-lg shadow-md bg-indigo-100 dark:bg-indigo-700 
-               text-indigo-800 dark:text-white 
-               hover:bg-white hover:text-indigo-700  transition-all duration-300"
+          className="px-6 py-3 mt-6 font-semibold text-indigo-800 transition-all duration-300 bg-indigo-100 rounded-lg shadow-md  dark:bg-indigo-700 dark:text-white hover:bg-white hover:text-indigo-700"
         >
           Download My Resume
         </button>
