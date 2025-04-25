@@ -23,7 +23,9 @@ const Projects = () => {
   useEffect(() => {
     const fetchProjects = async () => {
       try {
-        const res = await fetch("http://localhost:4000/api/projects");
+        const res = await fetch(
+          "modern-portfolio-backend.vercel.app/api/projects"
+        );
         const data = await res.json();
         setProjects(data);
       } catch (error) {

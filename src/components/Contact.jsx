@@ -17,11 +17,14 @@ export default function Contact() {
     setLoading(true);
 
     try {
-      const res = await fetch("http://localhost:4000/api/send-email", {
-        method: "POST",
-        headers: { "content-Type": "application/json" },
-        body: JSON.stringify(form),
-      });
+      const res = await fetch(
+        "modern-portfolio-backend.vercel.app/api/send-email",
+        {
+          method: "POST",
+          headers: { "content-Type": "application/json" },
+          body: JSON.stringify(form),
+        }
+      );
 
       if (!res.ok) {
         throw new Error("Email failed to send!");
