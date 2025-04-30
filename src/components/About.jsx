@@ -47,7 +47,7 @@ export default function About() {
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1 }}
-            className="w-32 h-32 md:w-48 md:h-48 max-w-[12rem] max-h-[12rem] rounded-full object-cover mb-12 shadow-lg ring-4 ring-black dark:ring-white transition-transform hover:scale-105 mx-auto"
+            className="w-32 h-32 md:w-48 md:h-48 max-w-[12rem] max-h-[12rem] rounded-full object-cover mb-12 shadow-lg ring-4 ring-black dark:ring-indigo-700 transition-transform hover:scale-105 mx-auto"
           />
           <motion.img
             src="/images/MERN-Stack.png"
@@ -55,7 +55,7 @@ export default function About() {
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1 }}
-            className="w-32 h-32 md:w-48 md:h-48 max-w-[12rem] max-h-[12rem] rounded-full object-cover mb-12 shadow-lg ring-4 ring-black dark:ring-white transition-transform hover:scale-105 mx-auto"
+            className="w-32 h-32 md:w-48 md:h-48 max-w-[12rem] max-h-[12rem] rounded-full object-cover mb-12 shadow-lg ring-4 ring-black dark:ring-indigo-700 transition-transform hover:scale-105 mx-auto"
           />
           <motion.img
             src="/images/Python.png"
@@ -63,7 +63,7 @@ export default function About() {
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1 }}
-            className="w-32 h-32 md:w-48 md:h-48 max-w-[12rem] max-h-[12rem] rounded-full object-cover mb-12 shadow-lg ring-4 ring-black dark:ring-white transition-transform hover:scale-105 mx-auto"
+            className="w-32 h-32 md:w-48 md:h-48 max-w-[12rem] max-h-[12rem] rounded-full object-cover mb-12 shadow-lg ring-4 ring-black dark:ring-indigo-700 transition-transform hover:scale-105 mx-auto"
           />
           <motion.img
             src="/images/Tailwind-css.png"
@@ -71,7 +71,7 @@ export default function About() {
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1 }}
-            className="w-32 h-32 md:w-48 md:h-48 max-w-[12rem] max-h-[12rem] rounded-full object-cover mb-12 shadow-lg ring-4 ring-black dark:ring-white transition-transform hover:scale-105 mx-auto"
+            className="w-32 h-32 md:w-48 md:h-48 max-w-[12rem] max-h-[12rem] rounded-full object-cover mb-12 shadow-lg ring-4 ring-black dark:ring-indigo-700 transition-transform hover:scale-105 mx-auto"
           />
         </div>
         <motion.p

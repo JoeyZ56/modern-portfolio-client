@@ -1,5 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
+import { ChevronDownIcon } from "@heroicons/react/solid";
 import ResumeDownload from "./ResumeDownload";
 
 export default function Hero() {
@@ -17,7 +18,7 @@ export default function Hero() {
         Joseph Zazzi
       </motion.h1>
       <motion.img
-        src="/images/Good-Pic.jpg"
+        src="/images/Good-Pic.JPG"
         alt="Joseph Zazzi"
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
@@ -44,7 +45,7 @@ export default function Hero() {
         }}
         className="mt-10 text-3xl"
       >
-        🢃
+        <ChevronDownIcon className="w-12 h-12 text-gray-800 dark:text-white" />
       </motion.div>
 
       <ResumeDownload />

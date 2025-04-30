@@ -31,10 +31,12 @@ const ProjectCard = ({
         <h3 className="mb-2 text-xl font-bold text-gray-900 dark:text-white">
           {title}
         </h3>
-        <p className="text-sm text-gray-700 dark:text-gray-300 line-clamp-4">
+
+        <p className="flex-grow text-sm text-gray-700 dark:text-gray-300">
           {description}
         </p>
 
+        {/* Tech stack */}
         <div className="flex flex-wrap gap-2 mt-4">
           {techStack?.map((tech, i) => (
             <span
@@ -46,6 +48,7 @@ const ProjectCard = ({
           ))}
         </div>
 
+        {/* Links section */}
         <div className="flex justify-between mt-6 text-sm font-semibold">
           <a
             href={liveUrl}
