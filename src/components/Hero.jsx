@@ -23,7 +23,7 @@ export default function Hero() {
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
-        className="w-40 h-40 md:w-48 md:h-48 max-w-[12rem] max-h-[12rem] rounded-full object-cover mb-8 shadow-lg ring-4 ring-white transition-transform hover:scale-105"
+        className="w-40 h-40 md:w-48 md:h-48 max-w-[12rem] max-h-[12rem] rounded-full object-cover mb-8 shadow-lg ring-4 ring-black dark:ring-white transition-transform hover:scale-105"
       />
 
       <motion.p
