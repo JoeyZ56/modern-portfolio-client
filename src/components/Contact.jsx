@@ -1,6 +1,7 @@
 "use client";
 import { useState, useEffect } from "react";
 import { BounceLoader } from "react-spinners";
+import { motion } from "framer-motion";
 
 export default function Contact() {
   const [form, setForm] = useState({ name: "", email: "", message: "" });
@@ -15,10 +16,11 @@ export default function Contact() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setLoading(true);
+    setError(false);
 
     try {
       const res = await fetch(
-        "modern-portfolio-backend.vercel.app/api/send-email",
+        "https://modern-portfolio-backend.vercel.app/api/send-email",
         {
           method: "POST",
           headers: { "content-Type": "application/json" },
@@ -30,7 +32,7 @@ export default function Contact() {
         throw new Error("Email failed to send!");
       }
 
-      setForm(true);
+      setSent(true);
       setForm({ name: "", email: "", message: "" });
     } catch (error) {
       console.error("Email error:", error);
@@ -48,9 +50,33 @@ export default function Contact() {
           <BounceLoader color="#6366F1" size={50} />
         </div>
       ) : sent ? (
-        <p className="text-center text-green-600">
-          Thanks! I'll be in touch soon.
-        </p>
+        <div className="p-4 text-green-500 bg-green-100 border border-green-400 rounded-md shadow-md">
+          <p className="font-medium text-center">
+            Thank you for reaching out. Ill be in touch soon!
+            <br />
+            <motion.a
+              whileInView={{ opacity: 1 }}
+              whileHover={{ scale: 1.1 }}
+              transition={{ duration: 0.5, type: "tween" }}
+              href="#hero"
+              className="text-indigo-800 underline hover:text-indigo-600"
+            >
+              Scroll Back to top
+            </motion.a>
+          </p>
+        </div>
+      ) : error ? (
+        <div className="p-4 text-center text-red-500 bg-red-100 border border-red-400 rounded-md shadow-md">
+          <p className="font-medium text-center">
+            Oops! Error occurred sending the email. Please email me directly.
+          </p>
+          <a
+            href="mailto:jzazzicoding@gmail.com"
+            className="text-indigo-800 underline hover:text-indigo-600"
+          >
+            jzazzicoding@gmail.com
+          </a>
+        </div>
       ) : (
         <div className="p-6 transition-shadow bg-white shadow-lg rounded-xl dark:bg-gradient-to-br dark:from-zinc-800 dark:to-zinc-900 hover:shadow-2xl">
           <form onSubmit={handleSubmit} className="space-y-4">
