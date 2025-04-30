@@ -24,7 +24,7 @@ const Projects = () => {
     const fetchProjects = async () => {
       try {
         const res = await fetch(
-          "modern-portfolio-backend.vercel.app/api/projects"
+          "https://modern-portfolio-backend.vercel.app/api/projects"
         );
         const data = await res.json();
         setProjects(data);
