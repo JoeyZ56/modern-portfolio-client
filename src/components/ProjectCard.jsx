@@ -15,10 +15,8 @@ const ProjectCard = ({
   liveUrl,
 }) => {
   return (
-    <motion.div
+    <div
       variants={cardVariants}
-      whileHover={{ scale: 1.03, rotate: 0.2 }}
-      whileTap={{ scale: 0.98 }}
       className="flex flex-col w-full max-w-sm mx-auto overflow-hidden transition-all duration-300 bg-white border border-gray-100 shadow-lg dark:bg-gradient-to-br dark:from-zinc-800 dark:to-zinc-900 hover:shadow-2xl rounded-xl dark:border-zinc-700"
     >
       <img
@@ -50,25 +48,29 @@ const ProjectCard = ({
 
         {/* Links section */}
         <div className="flex justify-between mt-6 text-sm font-semibold">
-          <a
+          <motion.a
+            whileHover={{ scale: 1.03, rotate: 0.2 }}
+            whileTap={{ scale: 0.98 }}
             href={liveUrl}
             target="_blank"
             rel="noopener noreferrer"
             className="text-indigo-600 dark:text-indigo-400 hover:underline"
           >
             🌐 Website
-          </a>
-          <a
+          </motion.a>
+          <motion.a
+            whileHover={{ scale: 1.03, rotate: 0.2 }}
+            whileTap={{ scale: 0.98 }}
             href={repoUrl}
             target="_blank"
             rel="noopener noreferrer"
             className="text-gray-600 dark:text-gray-300 hover:underline"
           >
             💻 GitHub
-          </a>
+          </motion.a>
         </div>
       </div>
-    </motion.div>
+    </div>
   );
 };
 
